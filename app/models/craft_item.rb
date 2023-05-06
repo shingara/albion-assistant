@@ -3,4 +3,6 @@ class CraftItem < ApplicationRecord
   belongs_to :item
 
   validate :craft, uniqueness: { scope: item }
+
+  # quantity
 end

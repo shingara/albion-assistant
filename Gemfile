@@ -71,3 +71,7 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'albion-api', path: 'lib/albion-api'
+gem 'devise'
+gem 'activeadmin'
