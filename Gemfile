@@ -75,3 +75,4 @@ end
 gem 'albion-api', path: 'lib/albion-api'
 gem 'devise'
 gem 'activeadmin'
+gem 'sassc'
