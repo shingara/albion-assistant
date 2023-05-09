@@ -8,4 +8,10 @@ class Craft < ApplicationRecord
 
   validates :item, uniqueness: true
 
+  def craft_prices
+    Market.all.map do |market|
+      CraftPrice.new(market, self)
+    end
+  end
+
 end

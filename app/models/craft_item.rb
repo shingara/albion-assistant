@@ -4,5 +4,9 @@ class CraftItem < ApplicationRecord
 
   validates :craft, uniqueness: { scope: :item }
 
+  def price_market(market)
+    item.price_market(market) * quantity
+  end
+
   # quantity
 end
